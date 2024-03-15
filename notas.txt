@@ -1,0 +1,8 @@
+Crear un ambiente virtual:
+
+Crear:              python -m venv buscador
+Activar:		        source buscador/bin/activate
+Consultar libr:	    pip freeze
+borrar ambiente:  	rm -rf buscador/
+Salir de amb:		   	deactivate
+
