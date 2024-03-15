@@ -10,6 +10,9 @@ print('-'*29)
 print ('Calculadora de rentabilidad 1')
 print('-'*29)
 
+#Adevertencia
+print('(Ingresar solo números enteros)')
+
 #Solicitud de datos
 precio_suscr = int(input('Ingrese precio de suscripción: '))
 num_usuarios = int(input('Ingrese número de usuarios: '))

@@ -82,20 +82,20 @@ is not        desigualdad a nivel de identidad (no son el mismo objeto)
 
 
 
-# Reducir decimales Usando round()
-numero = 3.14159
-reducido = round(numero, 2)
-print(reducido)  # Salida: 3.14
+# # Reducir decimales Usando round()
+# numero = 3.14159
+# reducido = round(numero, 2)
+# print(reducido)  # Salida: 3.14
 
 
 
 
 
-#Raiz cuadrada
-from math import sqrt
-sqrt(81) #9.0
-#Una alternativa es elevar al exponente 0.5:
-81 ** 0.5 #9.0
+# #Raiz cuadrada
+# from math import sqrt
+# sqrt(81) #9.0
+# #Una alternativa es elevar al exponente 0.5:
+# 81 ** 0.5 #9.0
 
 
 

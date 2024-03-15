@@ -1,9 +1,13 @@
 from math import sqrt
 
-#Solicitud de dataos
 print('-'*34)
 print ('Calculadora de velocidad de escape')
 print('-'*34)
+
+#Advertencia
+print('(Se acepta el ingreso de numeros decimales)')
+
+#Solicitud de datas
 r = float(input('Ingrese el radio en Kilómetros: '))
 g = float(input('Ingrese la constante g: '))
 
