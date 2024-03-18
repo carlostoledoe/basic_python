@@ -9,6 +9,20 @@
 
 
 
+# #Concatenando
+# print('Carlos ' + 'Santana')
+# print('Carlos ' * 3)
+
+
+
+
+
+# #Salto de linea
+# print("hola\na\ntodos")
+
+
+
+
 
 
 # # Transformar integer o float
@@ -37,32 +51,57 @@
 # nombre = input('¿Cuál es tu nombre? \n'); apellido = input('¿Cúal es tu apellido? \n')
 # print (f'''
 # Tu nombre es:   {nombre}
-# TU apellido es: {apellido}
+# Tu apellido es: {apellido}
 # ''')
 
 
 
 
 
-#Operadores booleanos
-'''
-Operación     Significado
 
-<             estrictamente menor que
-<=            menor o igual que
->             estrictamente mayor que
->=            mayor o igual que
-==            igual que
-!=            diferente que
-is            igualdad a nivel de identidad (Son el mismo objeto)
-is not        desigualdad a nivel de identidad (no son el mismo objeto)
-'''
+# #Otra forma de interpolar sin usar f
+# nombre = 'Carlos'
+# apellido = 'Santana'
+# print("Mi nombre es {} {}" .format(nombre, apellido))
+
+
+
+
+
+
+
+
+# #Interpolando, no se usa f
+# nombre = input('¿Cuál es tu nombre? \n'); apellido = input('¿Cúal es tu apellido? \n')
+# print ('''
+# Tu nombre es:   {}
+# Tu apellido es: {}
+# '''.format(nombre, apellido))
+
+
+
+
+
+
+# #Operadores booleanos
+# '''
+# Operación     Significado
+# <             estrictamente menor que
+# <=            menor o igual que
+# >             estrictamente mayor que
+# >=            mayor o igual que
+# ==            igual que
+# !=            diferente que
+# is            igualdad a nivel de identidad (Son el mismo objeto)
+# is not        desigualdad a nivel de identidad (no son el mismo objeto)
+# '''
 # proposicion = not ((10 > 2 + 2) and (5 < 3 or 6 > 1))
 # #                       true           false   true
 # #                       true            true
 # #                               true
 # #                               False
 # print(proposicion)
+
 
 
 
@@ -82,20 +121,64 @@ is not        desigualdad a nivel de identidad (no son el mismo objeto)
 
 
 
-# # Reducir decimales Usando round()
-# numero = 3.14159
-# reducido = round(numero, 2)
-# print(reducido)  # Salida: 3.14
+
+
+
+
+# #Tipos de variables:
+# variable = "Hola Mundo"
+# print(type(variable))  # Salida: <class 'str'>
+
+# numero = 42
+# print(type(numero))  # Salida: <class 'int'>
+
+# flotante = 4.32
+# print(type(flotante)) # Salida: <class 'bool'>
+
+# lista = [1, 2, 3]
+# print(type(lista))  # Salida: <class 'list'>
+
+# booleano = False
+# print(type(booleano)) # Salida: <class 'bool'>
 
 
 
 
 
-# #Raiz cuadrada
-# from math import sqrt
-# sqrt(81) #9.0
-# #Una alternativa es elevar al exponente 0.5:
-# 81 ** 0.5 #9.0
+
+# #Métodos de string
+# print('Nirvana canta '.count('an')) #Cuenta cuantas veces sale an
+# print(len('Grupo musical de metal  5')) #Cuenta llos carácteres inculuido espacios
+# print('santana'.upper()) #Todas en máyusculas
+# print('HolA cOmo EstÁS '.lower()) #Todas en minúsculas
+# print('carlos santana'.title()) #Mayúscula las primeras letras 
+# print('hola a todos'.capitalize()) #la primera letra 
+# print(' Hola a todo, cómo están '.strip()) #elimina los espacios al final o al principio
+# print('Hola mundo'.replace('o', 'x')) #reemplaza las ocurrencias
+# print(' -> '.join(['papel', 'piedra', 'tijera'])) #Une elementos con el string
+
+
+
+
+
+
+# #Separador de palabra usando espacio
+# texto = "Hola, ¿cómo estás?"
+# palabras = texto.split()  # El separador por defecto es el espacio en blanco
+# print(palabras)  # Salida: ['Hola,', '¿cómo', 'estás?']
+
+
+
+
+
+
+# #Separador usando un #
+# aaa = "carlos#santana#cantante#de#musica"
+# separado = aaa.split('#')  # Usando la coma como separador
+# print(separado) 
+
+
+
 
 
 
