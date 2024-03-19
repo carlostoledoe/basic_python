@@ -83,29 +83,6 @@
 
 
 
-# #Operadores booleanos
-# '''
-# Operación     Significado
-# <             estrictamente menor que
-# <=            menor o igual que
-# >             estrictamente mayor que
-# >=            mayor o igual que
-# ==            igual que
-# !=            diferente que
-# is            igualdad a nivel de identidad (Son el mismo objeto)
-# is not        desigualdad a nivel de identidad (no son el mismo objeto)
-# '''
-# proposicion = not ((10 > 2 + 2) and (5 < 3 or 6 > 1))
-# #                       true           false   true
-# #                       true            true
-# #                               true
-# #                               False
-# print(proposicion)
-
-
-
-
-
 
 # #Valor no valido o error
 # while True:
