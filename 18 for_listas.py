@@ -1,64 +1,73 @@
-# import getpass
-
-# def validarPassword(password): #Acoplar funciones para hacer más fácil revisar, arreglar
-#     #Validamos que sea de largo al menos sea 6
-#     if len(password) < 6:
-#         print('Su contraseña debe contener al menos 6 caracteres')
-#         return False
-#     elif password == '12345678':
-#         print('Este password es muy sencillo. Elija otro')
-#         return False
-#     elif password == '87654321':
-#         print('Este password es muy sencillo. Elija otro')
-#         return False
-#     elif ("'" in password) or ("*" in password) or ("-" in password):
-#         print("No puede usar especial dentro de su password")
-#         return False
-#     else:
-#         print('Contraseña correcta')
-#         return True
-
-# def main():
-# # esCorrecta = False
-# # while esCorrecta != True:
-#     while True:
-#         # 1. Le pido la nueva contraseña la usuario
-#         password = getpass.getpass('Ingrese una contraseña: ')
-#         print(f'Password ingresado: {password}')
-#         # Valido la contraseña con la función "validarPassword"
-#         esCorrecta = validarPassword(password) 
-#         # Si la contraseña es incorretca, repite el ciclo. Si está bien, salgo del ciclo con break
-#         if esCorrecta:
-#             break # Salir del ciclo
-#     print('Bienvenido!') # Fuera del ciclo
-# main()
+# lista1 = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18] #Lista por extensión
+# lista2 = [num for num in range(0, 20, 2)] #Lista por comprehensión
 
 
 
 
 
 
+# def quina():
+#     # lista = []
+#     # for i in range(31): #(0,31,1)
+#     #     if i % 5 == 0:
+#     #         lista.append('QUINA')
+#     #     else:
+#     #         lista.append(i)
+#     lista = ['QUINA' if i % 5 == 0 else i for i in range(31)] # Lista por comprehensión
+#     print(lista)
+# quina()
 
 
-# numero = None
-# while numero is None:
-#     try:
-#         numero = int(input("Ingresa un número: "))
-#     except ValueError:
-#         print("Eso no es un número válido.")
 
 
 
-# import sys #Permite ingresar datos desde la consonla
-# def sigma():
-#     numero = int(sys.argv[1]) #Indica qué atributo tomará
-#     i = 1 #inicar iterador
-#     suma = 0
-#     while i <= numero: #condición
-#         suma += i
-#         i += 1 #Incremento
-#     print(suma) 
-# sigma()
+
+# def crear_enlaces():
+#     nombres = ['Home', 'Quienes Somos', 'Contacto']
+#     enlaces = ['<a href="#">' + nombre + '</a>' for nombre in nombres]
+#     print(enlaces)
+# crear_enlaces()
+
+
+
+
+
+# #Para filtrar
+# grande = ['andrea', 'olga', 'armando', 'pedro', 'anastasia', 'orlando']
+# grupo = [nombre for nombre in grande if len(nombre) > 5] #los que tiene más de 5 letras
+# print(grupo)
+
+
+
+
+
+
+# ping = [120, 50, 600, 30, 90, 10, 200, 0, 500]
+# resultado = ['Bien' if ping <= 90 else 'mal' for ping in ping]
+# print(resultado)
+
+
+
+
+# seconds = [100, 50, 1000, 5000, 1000, 500]
+# minuts = [numsec / 60 for numsec in seconds]
+# print(minuts)
+
+
+
+
+
+# nombres = ['Chingao', 'Florimar', 'Onur', 'Hernesto Lisama', 'Lazlo', 'Isaura']
+# saludos = ['Hola ' + nombre for nombre in nombres ]
+# print(saludos)
+
+
+
+
+
+# rating = [50, 30, 45, 25, 55, 20]
+# resultados = ['Bien ' if puntos >= 45 else 'mal' for puntos in rating ]
+# print(resultados)
 
 
 
@@ -180,22 +189,22 @@
 
 
 
-import sys
-def buscar():
-    buscada = sys.argv[1]
-    palabras = ['En', 'un', 'lugar', 'de', 'la', 'Mancha,', 'de', 'cuyo', 'nombre', 'no', 'quiero', 'acordarme,', 'no', 'ha', 'mucho', 'tiempo', 'que', 'vivía', 'un', 'hidalgo', 'de', 'los', 'de', 'lanza', 'en', 'astillero,', 'adarga', 'antigua,', 'rocín', 'flaco', 'y', 'galgo', 'corredor.']
+# import sys
+# def buscar():
+#     buscada = sys.argv[1]
+#     palabras = ['En', 'un', 'lugar', 'de', 'la', 'Mancha,', 'de', 'cuyo', 'nombre', 'no', 'quiero', 'acordarme,', 'no', 'ha', 'mucho', 'tiempo', 'que', 'vivía', 'un', 'hidalgo', 'de', 'los', 'de', 'lanza', 'en', 'astillero,', 'adarga', 'antigua,', 'rocín', 'flaco', 'y', 'galgo', 'corredor.']
 
-    la_encontramos = False #Flag o bandera (is_present)
+#     la_encontramos = False #Flag o bandera (is_present)
 
-    for pos, palabra in enumerate(palabras):
-        if palabra == buscada:
-            frase = f'La palabra {buscada} está en la posción {pos}'
-            print(frase)
-            la_encontramos = True
-            break #para que no siga iterando y así ahorrar recursos
-    if not la_encontramos: # if la_encontramos == False:
-        print(f'La palabra {buscada} no fue encontrada')
-buscar()
+#     for pos, palabra in enumerate(palabras):
+#         if palabra == buscada:
+#             frase = f'La palabra {buscada} está en la posción {pos}'
+#             print(frase)
+#             la_encontramos = True
+#             break #para que no siga iterando y así ahorrar recursos
+#     if not la_encontramos: # if la_encontramos == False:
+#         print(f'La palabra {buscada} no fue encontrada')
+# buscar()
 
 
 
