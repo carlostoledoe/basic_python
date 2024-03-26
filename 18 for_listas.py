@@ -225,4 +225,70 @@
 
 
 
+# #Romper comtraseña
+# import sys
+# from string import ascii_lowercase
+# def fuerza_bruta ():
+#     clave = (sys.argv[1]).lower()
+#     intentos = 0
+#     for letra in clave:
+#         for caracter in ascii_lowercase:
+#             intentos += 1
+#             if letra == caracter:
+#                 break
+#     print(f'Se logró romper la contraseñanen {intentos} intentos')
+# fuerza_bruta()
+
+
+
+
+
+
+# #Listas paritiendo de atrás
+# a = [1, 2, 3, 4, 5]
+# print(a[-2]) # 4 es el penúltimo
+# #a.reverse()
+# print(a)
+
+# b = a[1:4] #no incluye el último, como el range
+# print(b)
+
+
+
+
+
+
+
+# import sys
+# def mostrar_agumentos():
+#     for indice, palabra in enumerate(sys.argv):
+#         print(f'En la posición {indice} está la palabra: {palabra} ')
+# mostrar_agumentos()
+
+
+
+
+
+
+
+
+# #Métodos
+# cuentos = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete']
+# #print(dir(cuentos)) #Ver los métodos
+
+# # El signo + concatena listas, pero append agrega cosas, cualquier cosa
+# cuentos.append('siete coma cinco')
+# cuentos.insert(2, 'tres coma cinco')
+# cuentos.pop(3)
+# cuentos.remove('seis')
+# cuentos.reverse()
+# cuentos.sort()
+# cuentos.sort(reverse = True)
+# print(cuentos.index('dos'))
+# cuentos = cuentos + ['hoho', 'jiji', 'eaea']
+# cuentos += ['hoho', 'jiji', 'eaea']
+# cuentos = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'] * 3
+# cuentos[2] = 'hola'
+# print(cuentos)
+
 

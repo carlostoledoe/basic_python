@@ -55,3 +55,52 @@
 #     }
 # ]
 # print(destinos[1]['ciudades'][2])
+
+
+
+
+
+
+
+# #llave vs valor (para la llave mejor usar string)
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
+# }
+# for llave, valor in perro.items():
+#     print(f'La llave {llave} tiene el valor {valor}') #iterar el diccionario
+
+# print(perro['raza']) #Ver el valor de la llave raza (coker)
+# perro['nombre'] = 'Rocky' #Cambio de nombre, se sobrescribe
+# perro['dueño'] = 'José' #agregar una nueva llave y valor . La llave debe ser única
+# print(perro)
+
+# del perro['dueño'] #Elimina la clave
+# print(perro)
+
+# datos_perro = {'talla': 'mediano', 'vacunas': ['octuple', 'antirrabica']} #diccionario adicional
+
+# perro.update(datos_perro) #Es como concatenar. Puede pidar los datos
+# print(perro)
+
+
+
+
+
+
+
+
+
+# auto = {
+#     'marca': 'mazda',
+#     'modelo': '3',
+#     'motor': 2000
+# }
+
+# auto.update({
+#     'color': 'rojo',
+#     '4x4': False
+# })
+
+# print(auto)
