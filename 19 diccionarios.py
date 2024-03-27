@@ -171,9 +171,9 @@
 
 
 
-#Convertir un diccinario en una lista (array):
-nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items()) 
-print(nueva)
+# #Convertir un diccinario en una lista (array):
+# nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items()) 
+# print(nueva)
 
 
 
@@ -181,19 +181,66 @@ print(nueva)
 
 
 
-#Iterando
-letras = {
-    '1': 'One',
-    '2': 'Two',
-    '3': 'Three',
-    '4': 'Four',
-    '5': 'Five'
-}
+# #Iterando
+# letras = {
+#     '1': 'One',
+#     '2': 'Two',
+#     '3': 'Three',
+#     '4': 'Four',
+#     '5': 'Five'
+# }
+# for k, v in letras.items():
+#     print(f'{k} es en ingles {v}')
 
-for k, v in letras.items():
-    print(f'{k} es en ingles {v}')
 
 
+
+
+
+
+# claves = ['nombre','apellido','edad','altura']
+# valores = ['Juan','Pérez', 33, 1.75]
+# print({k:v for k,v in zip(claves, valores)})
+
+
+
+
+
+
+
+# #Acceder al la lista y al diccionario
+# lista = [25, 31, "hola"]
+# print(lista[2]) # Se accede por la posición
+
+# diccionario = {
+#     "a": 25,
+#     "b": 31,
+#     "c": "hello",
+#     "c": "chao" # Cuando la clave está duplicada, toma el útimo valor
+# }
+# print(diccionario['c']) # Se accede por la clave
+
+
+
+
+
+# #Agregando y modificando elementos
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello",
+# }
+# diccionario['d'] = 'Chao' #Se agrega d
+# diccionario['c'] = 'Hola' #Modifica c
+# del diccionario['a']  #Elimino la clave a sin mostrarlo
+# print(diccionario.pop('b')) #Muestro el valor eliminado
+# diccionario_b = {
+#     'e': 'feo',
+#     'f': 'malo',
+#     'g': 'bueno' 
+# }
+# diccionario.update(diccionario_b) #Uniendo diccionarios
+# print(diccionario)
 
 
 

@@ -6,6 +6,27 @@
 
 
 
+#Comprehension
+# [fórmula for variable in iterable]
+# Empezamos por el ciclo, ara cada variable en el iterable realiza la fórmula"
+
+
+
+
+
+# n = 10
+# lista_par = [2*i +2 for i in range(n)]
+# print(lista_par)
+
+# lista2 = [num for num in range(0, 20, 2)] #llega al 18
+# print(lista2)
+
+
+
+
+
+
+
 # def quina():
 #     # lista = []
 #     # for i in range(31): #(0,31,1)
@@ -17,6 +38,32 @@
 #     print(lista)
 # quina()
 
+
+
+
+
+
+# valores = [0,4,5,6,7,8,9]
+# divisibles = []
+# for valor in valores:
+#     if valor % 2 == 0:
+#         divisibles.append('Divisible')
+#     else:
+#         divisibles.append('No Divisible')
+# print(divisibles)
+
+
+
+
+
+
+# #Lista por comprensión:
+# # [expresión1 if condición1 else expresión2 for variable in iterable]
+# valores = [0,4,5,6,7,8,9]
+# lista = ['Divisble' if valor % 2 == 0 else 'No divisible' for valor in valores]
+# print(lista)
+# # Empezamos con el ciclo, entonces, para cada valor almacenado en nuestra lista de valores, 
+# # vamos mostrar la palabra ‘Divisible’ si el valor módulo de 2 es igual a 0
 
 
 
@@ -42,9 +89,42 @@
 
 
 
+
+# #Filtrar
+# #[expresión for variable in iterable if condición ]
+# lista = ['Lechugas', 'Tomates', 5, 10, True, False, True, 'Papas', 5.1, 45.2, 1, 2, 0]
+# lista2 = [valor for valor in lista if type(valor) is str]
+# lista3 = [valor for valor in lista if isinstance(valor, str)]
+# print(lista2)
+# print(lista3)
+
+
+
+
+
+
+
 # ping = [120, 50, 600, 30, 90, 10, 200, 0, 500]
 # resultado = ['Bien' if ping <= 90 else 'mal' for ping in ping]
 # print(resultado)
+
+
+
+
+# #agrega los mayores e iguales a mil
+# a = [100, 200, 1000, 5000, 10000, 10, 5000]
+# b = [valor for valor in a if valor >= 1000]
+# print(b)
+
+
+
+
+
+
+# minutos = [120, 50, 600, 30, 90, 10, 200, 0, 500]
+# resultado = ['bien' if minuto <= 90 else 'mal' for minuto in minutos]
+# print(resultado)
+
 
 
 
@@ -273,23 +353,25 @@
 
 
 # #Métodos
-# cuentos = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete']
+cuentos = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete']
 # #print(dir(cuentos)) #Ver los métodos
 
 # # El signo + concatena listas, pero append agrega cosas, cualquier cosa
-# cuentos.append('siete coma cinco')
-# cuentos.insert(2, 'tres coma cinco')
-# cuentos.pop(3)
-# cuentos.remove('seis')
-# cuentos.reverse()
-# cuentos.sort()
-# cuentos.sort(reverse = True)
-# print(cuentos.index('dos'))
+# cuentos.append('siete coma cinco') #inserta al final
+# cuentos.insert(2, 'tres coma cinco') #inserta en la posición 2
+# cuentos.pop(3) #elimina y lo muestra
+# cuentos.remove('seis') #lo borra
+# cuentos.reverse() 
+# cuentos.sort() #Ordena de mayor a menor o alfabéticamente
+# cuentos.sort(reverse = True) #Ordena de menor a mayor
+# cuentos = sorted([3,6,7,4,1])
+# cuentos = sorted([3,6,7,4,1], reverse = True)
+# print(cuentos.index('dos')) # la posición
 # cuentos = cuentos + ['hoho', 'jiji', 'eaea']
 # cuentos += ['hoho', 'jiji', 'eaea']
 # cuentos = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'] * 3
 # cuentos[2] = 'hola'
-# print(cuentos)
+print(cuentos)
 
 
 
