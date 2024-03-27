@@ -159,4 +159,29 @@
 
 
 
+#Operadores de asignación
+#   a = 2 a toma el valor 2.
+#   a += 2 a es incrementado en dos y asignado el valor resultante.
+#   a -= 2 a es reducido en dos y asignado el valor resultante.
+#   a *= 3 a es multiplicado por tres y asignado el valor resultante.
+#   a /= 3 a es dividido por tres y asignado el valor resultante
+
+
+
+
+#Contador:
+# cont = cont + 1
+# cont += 1
+
+#Acumulador:
+# acu = acu + valor
+# acu += valor
+
+
+
+
+
+
+
+
 

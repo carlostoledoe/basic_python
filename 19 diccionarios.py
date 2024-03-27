@@ -104,3 +104,74 @@
 # })
 
 # print(auto)
+
+
+
+
+
+
+# #Un diccionario
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
+# }
+
+# #Agregando llaves
+# perro['tiene dueno'] = True
+# perro['vacuna'] = ['Atirrabica', 'Octuple']
+
+# print(perro)
+
+# #Iterando por llave
+# for llave in perro.keys():
+#     print(llave)
+
+# #Iterando por values
+# for valor in perro.values():
+#     print(valor)
+
+# #Iterando por ambos (lista de pares)
+# for k, v in perro.items():
+#     print(f'El valor de la llave {k} es:')
+#     print(v)
+
+
+
+
+
+
+#generador range(0, 100, 1)
+#Solo se materializan cuando se acceden a ellas
+
+
+
+
+# print(perro['raza'])
+# print(perro.get('tamaño', 'no definido')) #para errores.
+
+# print(perro)
+
+
+
+
+
+
+
+
+
+
+
+
+# lista = [3, 4, 5.3, 10, 21, 3.1]
+# print(min(lista))
+# print(sum(lista))
+# print(sum(lista) /len(lista))
+
+
+
+
+#Convertir un diccinario en una lista (array):
+nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items()) 
+print(nueva)
+
