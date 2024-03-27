@@ -175,3 +175,25 @@
 nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items()) 
 print(nueva)
 
+
+
+
+
+
+
+#Iterando
+letras = {
+    '1': 'One',
+    '2': 'Two',
+    '3': 'Three',
+    '4': 'Four',
+    '5': 'Five'
+}
+
+for k, v in letras.items():
+    print(f'{k} es en ingles {v}')
+
+
+
+
+

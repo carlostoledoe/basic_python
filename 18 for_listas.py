@@ -292,3 +292,67 @@
 # print(cuentos)
 
 
+
+
+
+# #agregar un contador:
+# #texto = 'Don Quijote de la Mancha​ es una novela escrita por el español Miguel de Cervantes Saavedra'
+# texto = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete']
+# for pos, letra in enumerate(texto):
+#     print(f"La letra en la posición {pos} es la {letra}")
+
+
+
+
+
+
+# #Transformar texto en lista
+# texto = 'Don Quijote de la Mancha es una novela escrita por el español Miguel de Cervantes Saavedra'
+# texto_list = texto.split(' ')
+# print(texto_list)
+
+
+
+
+
+
+
+# #unir varios iterables para usarlos con ZIP
+# prefijo = ['La','El','La','El']
+# frutas = ['manzana', 'platano','frutilla','tomate']
+# colores = ['verde','amarillo','roja','rojo']
+
+# for pref, frut, color in zip(prefijo, frutas, colores):
+#     print(f'{pref} {frut} es de color {color}')
+
+
+
+
+
+
+# def aleatorio(valor):
+#     p = print
+#     import random
+#     lista = [1,2,3,4,5,6,7,8,9,0]
+#     random.shuffle(lista)
+
+#     for k, elemento in enumerate(lista):
+#         if elemento == valor:
+#             print(f'Encontrado en la posición {k}')
+#             break
+#         else:
+#             p('No encotrado')
+# aleatorio(3)
+
+
+
+
+
+
+
+# #Tablas de multiplicar
+# for numero1 in range(1, 10):
+#     print('\n')
+#     print(f'Tabla del {numero1}:')
+#     for numero2 in range(10):
+#         print(f'{numero1} x {numero2} = {numero1*numero2}')
