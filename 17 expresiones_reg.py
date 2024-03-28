@@ -21,3 +21,6 @@ password1 = "StrongP@ssword123"
 password2 = "weakpassword"
 print(validate_password(password1)) 
 print(validate_password(password2))  
+
+
+# /*.[A+Z].*/

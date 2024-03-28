@@ -244,3 +244,40 @@
 
 
 
+
+
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello",
+#     'e': 'feo',
+#     'f': 'malo',
+#     'g': 'bueno' 
+# }
+# print(diccionario.keys()) #Muestra una LISTA con solo las llaves
+# print(diccionario.values()) #Muestra una LISTA con solo las llaves
+# print(diccionario.items()) #Muestra una LISTA con pares clave-valor
+# lista_diccionario = list(diccionario.items()) #Transforma en lista
+# print(lista_diccionario)
+
+
+
+
+
+# #Get
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello",
+#     'e': 'feo',
+#     'f': 'malo',
+#     'g': 'bueno' 
+# }
+# consulta = input('Ingrese un dato: ')
+# print(diccionario.get(f'{consulta}', 'No se encuentra')) #Muestra el valor, sino, No se encuentra
+
+
+
+
+
+

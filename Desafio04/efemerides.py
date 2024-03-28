@@ -12,6 +12,7 @@ def transformar_fecha():
     else:
         efemerides(f_original)
 
+    #signo_raro = first([signo in f_original for signo in ['.', '/', '-']], None) ???
 
 def efemerides(f_original):
     efemerides = {'1 de enero': 'Año Nuevo',
