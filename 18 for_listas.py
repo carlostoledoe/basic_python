@@ -438,3 +438,11 @@ print(cuentos)
 #     print(f'Tabla del {numero1}:')
 #     for numero2 in range(10):
 #         print(f'{numero1} x {numero2} = {numero1*numero2}')
+
+
+
+
+#Transforma una lista en string
+a = ', '.join(['uno','dos','tres','cuatro'])
+print(type(a))
+print(a)

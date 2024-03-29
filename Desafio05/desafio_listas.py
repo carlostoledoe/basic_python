@@ -34,27 +34,27 @@ def conversiones():
 #conversiones()
 
 
-def recordatorios():
-    recordatorios = [
-        ['2021-01-01', "11:00", "Levantarse y ejercitar"],
-        ['2021-05-01', "15:00", "No trabajar"],
-        ['2021-07-15', "13:00", "No hacer nada es feriado"],
-        ['2021-09-18', "16:00", "Ramadas"],
-        ['2021-12-25', "00:00", "Navidad"]
-    ]
-    #1. Agregar
-    recordatorios.insert(1, ['2021-01-02', '06:00', 'Empezar el año'])
-    # #2. Editar
-    recordatorios[2][0] = '2021-07-16'
-    # #3 Eliminar
-    del recordatorios[2]
-    # 4 Agregar cena navidad
-    recordatorios.insert(4, ['2021-12-24', '22:00', 'Cena de Navidad'])
-    # 5 Agregar cena año nuevo
-    recordatorios.append(['2021-12-31', '22:00', 'Cena de Año Nuevo'])
-    #Imprimir
-    for recordatorio in recordatorios:
-        print(recordatorio)
-recordatorios()
-
-
+# def recordatorios():
+#     recordatorios = [
+#         ['2021-01-01', "11:00", "Levantarse y ejercitar"],
+#         ['2021-05-01', "15:00", "No trabajar"],
+#         ['2021-07-15', "13:00", "No hacer nada es feriado"],
+#         ['2021-09-18', "16:00", "Ramadas"],
+#         ['2021-12-25', "00:00", "Navidad"]
+#     ]
+#     #1. Agregar
+#     #evento_nuevo = ['2021-02-02', '06:00', 'Empezar el año']
+#     #recordatorios = [recordatorios[0], evento_nuevo] + recordatorios[1:] #desde el 1 en adelante
+#     recordatorios.insert(1, ['2021-01-02', '06:00', 'Empezar el año'])
+#     # #2. Editar
+#     recordatorios[2][0] = '2021-07-16'
+#     # #3 Eliminar
+#     del recordatorios[2]
+#     # 4 Agregar cena navidad
+#     recordatorios.insert(4, ['2021-12-24', '22:00', 'Cena de Navidad'])
+#     # 5 Agregar cena año nuevo
+#     recordatorios.append(['2021-12-31', '22:00', 'Cena de Año Nuevo'])
+#     #Imprimir
+#     for recordatorio in recordatorios:
+#         print(recordatorio)
+# recordatorios()

@@ -182,6 +182,13 @@
 
 
 
+# #Métodos disponibles para cada tipo de dato o escructura
+# metodos = dir(list)
+# for metodo in metodos:
+#     print(metodo)
+
+
+
 
 
 

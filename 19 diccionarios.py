@@ -181,16 +181,16 @@
 
 
 
-# #Iterando
-# letras = {
-#     '1': 'One',
-#     '2': 'Two',
-#     '3': 'Three',
-#     '4': 'Four',
-#     '5': 'Five'
-# }
-# for k, v in letras.items():
-#     print(f'{k} es en ingles {v}')
+#Iterando
+letras = {
+    '1': 'One',
+    '2': 'Two',
+    '3': 'Three',
+    '4': 'Four',
+    '5': 'Five'
+}
+for k, v in letras.items():
+    print(f'{k} es en ingles {v}')
 
 
 
