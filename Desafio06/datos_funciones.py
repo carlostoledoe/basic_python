@@ -85,3 +85,63 @@
 #     print(f'El factorial de {fact_2} es {resultado_factorial2}')
 
 # calcular(fact_1 = 5, prod_1 = [4,6,7,4,3], fact_2 = 6)
+
+
+
+
+# #Revisión
+# import sys
+# umbral = int(sys.argv[1])
+
+# precios = {
+#     'Notebook': 700000,
+#     'Teclado': 25000,
+#     'Mouse': 12000,
+#     'Monitor': 250000,
+#     'Escritorio': 135000,
+#     'Tarjeta de Video': 1500000
+# }
+
+# def filtro():
+#     operacion = None
+#     if len(sys.argv) < 3:
+#         operacion = 'mayor'
+#     elif sys.argv[2] == 'menor':
+#         operacion = 'menor'
+#     else: 
+#         print('Operación no valida')
+#         sys.exit()
+#     filtrados = []
+#     for producto, precio in precios.items():
+#         if (operacion == 'mayor' and precio > umbral) or (operacion == 'menor' and precio < umbral):
+#             filtrados.append(producto)
+#     filtrados = (', ').join(filtrados)
+#     print(f'Los elementos  que son {operacion} a {umbral} son {filtrados}')
+# filtro()
+
+
+
+
+# def factorial(num):
+#     if num <= 1:
+#         return 1
+#     total = 1
+#     for i in range(1, num + 1):
+#         total *= i
+#     return total
+
+
+
+
+
+# def productoria(lista):
+#     total = 1
+#     for elemento in lista:
+#         total *= elemento
+#     return total
+# lista = [4, 2, 5]
+# print (f'La productoria es de {lista} es {productoria(lista)}')
+
+
+
+
