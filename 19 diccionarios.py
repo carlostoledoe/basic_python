@@ -181,16 +181,16 @@
 
 
 
-#Iterando
-letras = {
-    '1': 'One',
-    '2': 'Two',
-    '3': 'Three',
-    '4': 'Four',
-    '5': 'Five'
-}
-for k, v in letras.items():
-    print(f'{k} es en ingles {v}')
+# #Iterando
+# letras = {
+#     '1': 'One',
+#     '2': 'Two',
+#     '3': 'Three',
+#     '4': 'Four',
+#     '5': 'Five'
+# }
+# for k, v in letras.items():
+#     print(f'{k} es en ingles {v}')
 
 
 
@@ -246,6 +246,7 @@ for k, v in letras.items():
 
 
 
+# #Métodos
 # diccionario = {
 #     'a': 25,
 #     'b': 31,
@@ -275,6 +276,33 @@ for k, v in letras.items():
 # }
 # consulta = input('Ingrese un dato: ')
 # print(diccionario.get(f'{consulta}', 'No se encuentra')) #Muestra el valor, sino, No se encuentra
+
+
+
+
+
+
+# #Convertir un diccionario en una lista
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello",
+#     'e': 'feo',
+#     'f': 'malo',
+#     'g': 'bueno' 
+# }
+# new_dicc = list(diccionario.items()) # Cada par (clave, valor) será una tupla:
+# print(new_dicc) 
+
+
+
+
+
+
+# #Convertir una lista en diccionario
+# lista = [('a', 25), ('b', 31), ('c', 'hello'), ('e', 'feo'), ('f', 'malo'), ('g', 'bueno')]
+# new_lista = dict(lista)
+# print(new_lista) # diccionario
 
 
 

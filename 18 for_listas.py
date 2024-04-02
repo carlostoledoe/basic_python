@@ -376,6 +376,16 @@ print(cuentos)
 
 
 
+# numero = [1, 2, 3, 4, 5]
+# print(sum(numero)) #suma
+# print(max(numero)) #el más grande
+# print(min(numero)) #el menor
+
+
+
+
+
+
 
 # #agregar un contador:
 # #texto = 'Don Quijote de la Mancha​ es una novela escrita por el español Miguel de Cervantes Saavedra'
@@ -442,7 +452,20 @@ print(cuentos)
 
 
 
-#Transforma una lista en string
-a = ', '.join(['uno','dos','tres','cuatro'])
-print(type(a))
-print(a)
+# #Transforma una lista en string
+# a = ', '.join(['uno','dos','tres','cuatro'])
+# print(type(a))
+# print(a)
+
+
+
+
+
+# #Convertir una lista en diccionario
+# lista = [('a', 25), ('b', 31), ('c', 'hello'), ('e', 'feo'), ('f', 'malo'), ('g', 'bueno')]
+# new_lista = dict(lista)
+# print(new_lista) # diccionario
+
+
+
+
