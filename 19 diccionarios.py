@@ -309,3 +309,23 @@
 
 
 
+# #Caso de no elegir una clave en opciones
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': 'hello',
+#     'd': 'feo',
+#     'e': 'malo',
+#     'f': 'bueno' 
+# }
+# print('''
+#     Elija una opción:
+#     a: 25
+#     b: 31
+#     c: hello
+#     d: feo
+#     e: malo
+#     f: bueno''')
+# opcion = input('> ')
+# respuesta = diccionario.get(opcion, 'otra cosa que no está')
+# print(f'Su respuesta fue: {respuesta}')
