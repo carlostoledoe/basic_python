@@ -23,21 +23,20 @@ photos = request_get(url)
 card = ''
 for photo in photos:
     card += f'''<div class="col-3">
-                    <div class="card" style="width: 12rem;">
+                    <div class="card mt-3" style="width: 12rem;">
                         <img src="{photo['images']['thumb']}" class="card-img-top" alt="{photo['name']['english']}">
                         <div class="card-body">
                             <h5 class="card-title">{photo['name']['spanish']}</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">En ingles: {photo['name']['english']}</li>
-                            <li class="list-group-item">En latín: {photo['name']['latin']}</li>
+                            <li class="list-group-item"><strong>En ingles:</strong><em> {photo['name']['english']}</em></li>
+                            <li class="list-group-item"><strong>En latín:</strong><em> {photo['name']['latin']}</em></li>
                         </ul>
                         <div class="card-body">
                             <a href="{photo['images']['full']}" class="card-link">Ver en grande</a>
                         </div>
                     </div>
-                </div>
-'''
+                </div>'''
 
 
 # Template HTML
@@ -46,7 +45,7 @@ html_template = f'''<!doctype html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
+        <title>Aves Chile</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
@@ -56,7 +55,6 @@ html_template = f'''<!doctype html>
             <div class="row">
                 {card}
             </div>
-
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
