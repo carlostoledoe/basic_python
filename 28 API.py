@@ -58,20 +58,18 @@ import pdn
 
 
 
-
-url = 'https://jsonplaceholder.typicode.com/posts'
-data = {
-    'userID': 1,
-    'title': 'hola',
-    'body': 'Este es mi primer posteo desde Python'
-}
-
-data = json.dumps(data)
-headers = {
-    'Content-Type': 'application/json'
-}
-
-response = requests.post(url, headers, data) #Envía la información
-print(response)
-print(response.text)
-#pdb.set_trace() #response.status_code // response.text
+# #Posteo
+# url = 'https://jsonplaceholder.typicode.com/posts'
+# data = {
+#     'userID': 1,
+#     'title': 'hola',
+#     'body': 'Este es mi primer posteo desde Python'
+# }
+# data = json.dumps(data)
+# headers = {
+#     'Content-Type': 'application/json'
+# }
+# response = requests.post(url, headers, data) #Envía la información, post
+# print(response)
+# print(response.text)
+# #pdb.set_trace() #response.status_code // response.text
