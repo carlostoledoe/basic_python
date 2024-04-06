@@ -7,4 +7,4 @@ Activar:		    source ../entornos_virtuales/apis_env/bin/activate    #Está una c
 Consultar libr:	    pip freeze
 borrar ambiente:  	rm -rf buscador/
 Salir de amb:		   	deactivate
-
+Crea los requeremientos:    pip freeze > requierment.txt

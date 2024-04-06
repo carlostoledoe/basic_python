@@ -20,7 +20,7 @@
 
 import requests
 import json
-import pdn
+import pdb
 
 
 
@@ -73,3 +73,30 @@ import pdn
 # print(response)
 # print(response.text)
 # #pdb.set_trace() #response.status_code // response.text
+
+
+
+
+
+
+
+
+
+
+# def probar_put():
+#     url = 'https://jsonplaceholder.typicode.com/posts/20' #Debe incluir la ID
+#     data = {
+#         'userId': 2,
+#         'title': 'Articulo Modificador',
+#         'body': 'Este es la corrección'
+#     }
+#     # data = json.dumps(data)
+#     # requests.put(): Esta función acepta un argumento adicional llamado json, que te permite pasar 
+#     # directamente un diccionario (o cualquier objeto serializable) como datos. Internamente, 
+#     # requests se encargará de convertirlo a JSON antes de enviar la solicitud PUT.
+
+#     response = requests.put(url, json=data) #Put acepta dos argumentos posicionales, no header
+#     print(response.status_code)
+
+# if __name__ == '__main__':
+#     probar_put()
