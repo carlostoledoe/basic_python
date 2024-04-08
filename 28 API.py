@@ -24,6 +24,13 @@ import pdb
 
 
 
+# # Consulta básica
+# url = 'https://reqres.in/api/users'
+# response = requests.get(url)
+# users_data = json.loads(response.text)
+# print(users_data)
+
+
 
 
 # url = 'https://anapioficeandfire.com/api/characters/583'
