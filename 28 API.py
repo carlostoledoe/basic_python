@@ -76,11 +76,12 @@ import pdb
 # headers = {
 #     'Content-Type': 'application/json'
 # }
+
 # response = requests.post(url, headers, data) #Envía la información, post
 # print(response)
 # print(response.text)
 # #pdb.set_trace() #response.status_code // response.text
-
+# #breakpoint() #Tambien se puede usar
 
 
 

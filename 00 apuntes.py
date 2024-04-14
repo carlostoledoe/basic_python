@@ -228,6 +228,32 @@
 
 
 
+# # Pausas
+# import time
+
+# print('Comienza...')
+# time.sleep(3)
+# print('Han pasado 3 segundos')
+
+
+
+
+
+
+
+
+# #Limpiar pantalla
+# import os
+# import sys
+
+# clear = 'cls' if sys.platform == 'win32' else 'clear' # detecta el OS
+# # ejecuta la limpieza
+# os.system(clear)
+
+
+
+
+
 
 
 
