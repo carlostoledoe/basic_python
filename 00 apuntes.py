@@ -47,52 +47,8 @@
 
 
 
-# #Interpolando
-# nombre = input('¿Cuál es tu nombre? \n'); apellido = input('¿Cúal es tu apellido? \n')
-# print (f'''
-# Tu nombre es:   {nombre}
-# Tu apellido es: {apellido}
-# ''')
 
 
-
-
-
-
-# #Otra forma de interpolar sin usar f
-# nombre = 'Carlos'
-# apellido = 'Santana'
-# print("Mi nombre es {} {}" .format(nombre, apellido))
-
-
-
-
-
-
-
-
-# #Interpolando, no se usa f
-# nombre = input('¿Cuál es tu nombre? \n'); apellido = input('¿Cúal es tu apellido? \n')
-# print ('''
-# Tu nombre es:   {}
-# Tu apellido es: {}
-# '''.format(nombre, apellido))
-
-
-
-
-
-
-
-# #Valor no valido o error
-# while True:
-#     try:
-#         numero = int(input('Dime un número: '))
-#         print(f'El número ingresado es {numero}.')
-#         break  # Si se ingresa un número correctamente, se rompe el bucle.
-#     except ValueError:
-#         print('Eso no es un número válido. Intenta de nuevo.')
-# print ('Correcto!!')
 
 
 
@@ -261,5 +217,17 @@
 # no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero,
 # adarga antigua, rocín flaco y galgo corredor.'''
 # archivo = open('salida.txt', 'w')
-# archivo.write(cuento)
+# archivo.write(cuento) # Se cierra manualmente
 # archivo.close()
+
+
+
+
+
+
+# # Escribir en archivo (mejor opción)
+# cuento = '''En un lugar de la Mancha, de cuyo nombre no quiero acordarme,
+# no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero,
+# adarga antigua, rocín flaco y galgo corredor.'''
+# with open('salida.txt', 'w') as f:
+#     f.write(cuento) # Se cierra automáticamente al salir de bloque, si hay error, lo cierra

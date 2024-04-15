@@ -2,9 +2,29 @@ Crear un ambiente virtual:
 
 Crear:              python -m venv buscador
 Activar:		    source buscador/bin/activate                          #Si está en la misma carpeta
+Activar:            source virtual_env/chatbot/bin/activate               #Si está una carpeta adentro
 Activar:		    source ../entornos_virtuales/buscador/bin/activate    #Está una carpeta atrás
-Activar:		    source ../entornos_virtuales/apis_env/bin/activate    #Está una carpeta atrás
 Consultar libr:	    pip freeze
 borrar ambiente:  	rm -rf buscador/
 Salir de amb:		   	deactivate
 Crea los requeremientos:    pip freeze > requierment.txt
+
+
+
+
+Uso Variables de entorno:
+
+1. Instalar la librería dotenv:
+    pip install python-dotenv
+
+2. Crear archivo .env y agregar variables de entorno ( API_KEY=123456 )
+
+3. Recordar ocular en .gitignore
+
+5. En Python:
+
+import os
+from dotenv import load_dotenv
+load_dotenv()  # Carga las variables de entorno del archivo .env
+
+api_key = os.getenv('API_KEY') # Asignando a la variables 
