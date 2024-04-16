@@ -469,3 +469,9 @@ print(cuentos)
 
 
 
+
+# #crear una lista enumerada a partir de un la lisrta
+# disponibles = ['Tomate','Champiñones','Aceituna','Cebolla','Pollo', 'Jamón','Carne','Tocino','Queso']
+# string_pregunta = [str(idx + 1) + '. ' + ingre for idx, ingre in enumerate(disponibles)]
+# string_pregunta = '\n'.join(string_pregunta)
+# string_pregunta += '\n'

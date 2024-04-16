@@ -1,39 +1,47 @@
-from ingredientes import add_ingrediente, drop_ingrediente
+import os
+import time
+import string as s
+from masa import cambiar_tipo_masa
+from salsa import agregar_salsa
+from add import agregar_ingredientes
+from remove import quitar_ingredientes
+from show import mostrar_ingredientes
 
-pizza = {
-    "masa": "Masa Tradicional",
-    "salsa": "Salsa de Tomate",
-    "ingredientes": []
+pizza_base = {
+    'masa': 'Masa Tradicional',
+    'salsa': 'Salsa de Tomate',
+    'ingredientes': []
 }
 
-def menu ():
-	print('Bienvenido/as a Hot Pizza')
-	while True:
-		opcion = input('''¿Qué desea realizar?
-			1. Cambiar tipo de Masa
-			2. Cambiar tipo de Salsa
-			3. Agregar Ingredientes
-			4. Eliminar Ingredientes
-			5. Ordenar con los Ingredientes Actuales
-			0. Consultar ingredientes de la pizza
-			Otro Número cancelará el pedido.
-		> ''')
-		if opcion == '1':
-			print('Cambiando masa')
-		elif opcion == '2':
-			print('cambiar la salsa')
-		elif opcion == '3':
-			add_ingrediente(pizza)
-		elif opcion == '4':
-			drop_ingrediente(pizza)
-		elif opcion == '5':
-			print('terminar la orden')
-		elif opcion == '0':
-			print(pizza)
-		else:
-			print('Opción inválida')
-		break
-		
+def menu():
+    os.system('clear')
+    print('\n                *** Bienvenido a Pizza Jut ***')
+    while True:
+        try:
+            opcion = int(input(s.principal))
+            if opcion == 1:
+                eleccion = input(s.tipo_de_masa)
+                cambiar_tipo_masa(pizza_base, eleccion)
+            elif opcion == 2:
+                eleccion = input(s.salsa)
+                agregar_salsa(pizza_base, eleccion)
+            elif opcion == 3:
+                eleccion = int(input(s.ingredientes_disponibles))
+                agregar_ingredientes(pizza_base, eleccion)
+            elif opcion == 4:
+                quitar_ingredientes(pizza_base)
+            elif opcion == 5:
+                print('Ordenar')
+            elif opcion == 6:
+                mostrar_ingredientes(pizza_base)
+            elif opcion == 0:
+                print('Saliendo del programa...')
+                exit(time.sleep(1))
 
-if __name__ == '__main__':
-	menu()
+        except ValueError:
+            print('     **** Opción no valida ****')
+
+
+
+if __name__ == '__main__':  
+    menu()
