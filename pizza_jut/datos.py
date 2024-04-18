@@ -38,3 +38,9 @@ ingredientes_disponibles = '''
         8. Tocino
         9. Queso
         > '''
+
+ingredientes = {
+        'masa': 'Masa Tradicional',
+        'salsa': 'Salsa de Tomate',
+        'ingredientes': []
+}

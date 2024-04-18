@@ -1,47 +1,52 @@
 import os
+import sys
 import time
-import string as s
+import datos as d
 from masa import cambiar_tipo_masa
 from salsa import agregar_salsa
 from add import agregar_ingredientes
 from remove import quitar_ingredientes
 from show import mostrar_ingredientes
+from ordenar import ordenar
 
-pizza_base = {
-    'masa': 'Masa Tradicional',
-    'salsa': 'Salsa de Tomate',
-    'ingredientes': []
-}
+pizza_base = d.ingredientes
+clear = 'cls' if sys.platform == 'win32' else 'clear'
+
 
 def menu():
-    os.system('clear')
+    os.system(clear)
     print('\n                *** Bienvenido a Pizza Jut ***')
     while True:
         try:
-            opcion = int(input(s.principal))
+            time.sleep(0.5)
+            opcion = int(input(d.principal))
             if opcion == 1:
-                eleccion = input(s.tipo_de_masa)
+                os.system(clear)
+                eleccion = input(d.tipo_de_masa)
                 cambiar_tipo_masa(pizza_base, eleccion)
             elif opcion == 2:
-                eleccion = input(s.salsa)
+                os.system(clear)
+                eleccion = input(d.salsa)
                 agregar_salsa(pizza_base, eleccion)
             elif opcion == 3:
-                eleccion = int(input(s.ingredientes_disponibles))
+                os.system(clear)
+                eleccion = int(input(d.ingredientes_disponibles))
                 agregar_ingredientes(pizza_base, eleccion)
             elif opcion == 4:
+                os.system(clear)
                 quitar_ingredientes(pizza_base)
             elif opcion == 5:
-                print('Ordenar')
+                os.system(clear)
+                ordenar(pizza_base)
             elif opcion == 6:
+                os.system(clear)
                 mostrar_ingredientes(pizza_base)
             elif opcion == 0:
-                print('Saliendo del programa...')
+                os.system(clear)
+                print('Su pedido ha sido cancelado. Gracias por contactarse a Pizza JAT')
                 exit(time.sleep(1))
-
         except ValueError:
             print('     **** Opción no valida ****')
-
-
 
 if __name__ == '__main__':  
     menu()
