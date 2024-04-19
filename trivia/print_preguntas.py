@@ -1,16 +1,11 @@
 import preguntas as p
 
 def print_pregunta(enunciado, alternativas):
-    
-    # Imprimir enunciado y alternativas
-    ###############################################################
-    pass
-    
-    
-    
-    
-    ###############################################################
-        
+    print(f'{enunciado[0]}\n')
+    letras = ['A','B','C','D']
+    for l, a in zip(letras, alternativas):
+        print(f'{l}. {a[0]}')
+
 if __name__ == '__main__':
     # Las preguntas y alternativas deben mostrarse según lo indicado
     pregunta = p.pool_preguntas['basicas']['pregunta_1']

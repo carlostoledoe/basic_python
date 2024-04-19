@@ -207,6 +207,14 @@
 
 
 
+# alternativas = ['nombre','apellido','edad','altura']
+# letras = ['A','B','C','D']
+# for l, a in zip(letras, alternativas):
+#     print(f'{l}. {a}')
+
+
+
+
 
 # #Acceder al la lista y al diccionario
 # lista = [25, 31, "hola"]
@@ -329,3 +337,21 @@
 # opcion = input('> ')
 # respuesta = diccionario.get(opcion, 'otra cosa que no está')
 # print(f'Su respuesta fue: {respuesta}')
+
+
+
+
+
+
+# # Elegir un valor random de una clave elegida
+# import random
+
+# opciones = {
+#     'bas':  [1,2,3],
+#     'inter': [4,5,6],
+#     'avan': [7,8,9]
+# }
+
+# eleccion = input('Elija una opción (bas, inter, avan): ')
+# num = random.choice(opciones[eleccion])
+# print(num)

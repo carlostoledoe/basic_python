@@ -1,10 +1,6 @@
-
 def validate(opciones, eleccion):
-    # Definir validación de eleccion
-    ##########################################################################
-    pass
-    
-    ##########################################################################
+    while eleccion not in opciones:
+        eleccion = input('Opción no válida, ingrese una de las opciones válidas: ')
     return eleccion
 
 
@@ -15,5 +11,3 @@ if __name__ == '__main__':
     numeros = ['0','1']
     # Si se ingresan valores no validos a eleccion debe seguir preguntando
     validate(numeros, eleccion)
-    
-    

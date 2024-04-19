@@ -475,3 +475,15 @@ print(cuentos)
 # string_pregunta = [str(idx + 1) + '. ' + ingre for idx, ingre in enumerate(disponibles)]
 # string_pregunta = '\n'.join(string_pregunta)
 # string_pregunta += '\n'
+
+
+
+
+
+# #Elección con not in
+# opciones = [1,2,3,4,5,6,7,8,9,0]
+# eleccion = int(input('Ingrese una opción: '))
+
+# while eleccion not in opciones:
+#     eleccion = int(input('Opción no válida, ingrese una de las opciones válidas: '))
+# print(f'El numero {eleccion} está en la lista')

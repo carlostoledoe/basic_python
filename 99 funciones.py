@@ -11,7 +11,7 @@ def calculadora_dias(dias):
 
 
 
-#consulta básica
+#consulta básica API
 import requests
 import json
 
@@ -23,6 +23,13 @@ def request_get(url):
 
 
 
+
+
+# Validar opciones (elección en una lista)
+def validate(opciones, eleccion):
+    while eleccion not in opciones:
+        eleccion = input('Opción no válida, ingrese una de las opciones válidas: ')
+    return eleccion
 
 
 
