@@ -27,8 +27,23 @@ import pdb
 # # Consulta básica
 # url = 'https://reqres.in/api/users'
 # response = requests.get(url)
-# users_data = json.loads(response.text)
+# users_data = json.loads(response.text) # Tranforma en diccionario para iterar
 # print(users_data)
+# print(type(users_data))
+
+
+
+
+
+
+
+# import requests
+# response = requests.get('https://jsonplaceholder.typicode.com/posts')
+# print(response) # Muestra el tipo de mansaje
+# print(response.text) # Muestra iun string
+
+
+
 
 
 
@@ -108,3 +123,123 @@ import pdb
 
 # if __name__ == '__main__':
 #     probar_put()
+
+
+
+
+
+
+
+
+
+
+
+# import json
+# import requests
+
+# class Mindicador:
+#     def __init__(self, indicador, year):
+#         self.indicador = indicador
+#         self.year = year
+
+#     def InfoApi(self):
+#         # En este caso hacemos la solicitud para el caso de consulta de un indicador en un año determinado
+#         url = f'https://mindicador.cl/api/{self.indicador}/{self.year}'
+#         response = requests.get(url)
+#         data = json.loads(response.text.encode("utf-8"))
+#         # Para que el json se vea ordenado, retornar pretty_json
+#         pretty_json = json.dumps(data, indent=2)
+#         return data
+
+# indicador = input('Qué dato desea consultar (bitcoin, uf, dolar, utm):\n')
+# fecha = input('Indique la fecha en el siguiente formato dd-mm-aaaa:\n')
+# respuesta = Mindicador(indicador, fecha)
+# datos = respuesta.InfoApi()
+# print(f"Nombre del indicador: {datos['nombre']}")
+# print(f"Valor: {datos['serie'][0]['valor']}")
+
+
+
+
+
+
+
+# import requests
+# response = requests.get('https://jsonplaceholder.typicode.com/posts')
+# datos = json.loads(response.text)
+
+# print(datos[0]) # Muestra el primer resultado
+# print(datos[0].keys()) # Muestra las llaves/claves del primer resultado
+# print(datos[0]['title']) # Muestra el valor de la llave title
+
+# #mostrar todos los títulos en lista
+# titulos = [post['title'] for post in datos]
+# print(type(titulos))
+
+
+
+# # Cierta cantindad de datos
+# import requests
+# def request_get(url):
+#     response = json.loads(requests.get(url).text)
+#     return response
+
+# solicitud = request_get('https://jsonplaceholder.typicode.com/posts')[3:6] #elementos pos 3 al 6
+# print(solicitud)
+
+
+
+
+
+
+
+
+# # Post
+# payload = '''{
+#     "title": "Nuevo Post",
+#     body": "Este es el contenido"
+# }'''
+
+# response = requests.post('https://jsonplaceholder.typicode.com/posts', data = payload)
+# print(f'Este es el mensaje del servidor: {response}')
+# print(response.text) 
+
+
+
+
+
+
+
+
+
+# #Cambio o put. Se debe usar la ID
+# payload = '''{
+#     "tile": "Cambio de título,
+#     "body": "Cuerpo de post",
+#     "userID": 1    
+# }'''
+
+# response = requests.put('https://jsonplaceholder.typicode.com/posts/20', data = payload)
+# print(f'Este es el mensaje del servidor: {response}')
+# print(response.text) 
+
+
+
+
+
+
+
+# #Autenficiación
+# import json
+# import requests
+
+# app_id = ""
+# app_key = ""
+
+# word = "hello"
+
+# url = f"https://od-api.oxforddictionaries.com/api/v2/entries/en/{word}"
+
+# r = json.loads(requests.get(url, headers = {"app_id": app_id, "app_key": app_key}).text)
+# print(r)
+# print(r.keys())

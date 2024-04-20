@@ -26,8 +26,8 @@ def request_get(url):
 
 
 # Validar opciones (elección en una lista)
-def validate(opciones, eleccion):
-    while eleccion not in opciones:
+def validate(lista, eleccion):
+    while eleccion not in lista:
         eleccion = input('Opción no válida, ingrese una de las opciones válidas: ')
     return eleccion
 

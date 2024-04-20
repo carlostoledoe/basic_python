@@ -8,7 +8,7 @@ import json
 def request_get(url): 
     return json.loads(requests.get(url).text) 
 
-url = 'https://reqres.in/api/users'
+url = "https://reqres.in/api/users"
 
 users_data = request_get(url)
 
@@ -29,8 +29,8 @@ nombre = 'Ignacio'
 trabajo = 'Profesor'
 
 new_user = {
-    'nombre': f'{nombre}',
-    'trabajo': f'{trabajo}'
+    "nombre": f"{nombre}",
+    "trabajo": f"{trabajo}"
 }
 
 data = json.dumps(new_user)
@@ -49,8 +49,8 @@ print(created_user.text)
 # Guarde el diccionario de respuesta en una variable llamada updated_user e imprímala en pantalla.
 
 new_name = {
-    'first_name': 'Morpheus',
-    'residence': 'Zion'
+    "first_name": "Morpheus",
+    "residence": "Zion"
 }
 
 data = json.dumps(new_name)
@@ -74,6 +74,6 @@ print(response.text)
 
 # Verifica la respuesta
 if response.status_code == 204:
-    print(f"Usuario eliminado correctamente.")
+    print(f'Usuario eliminado correctamente.')
 else:
-    print(f"Error al eliminar el usuario. Código de estado: {response.status_code}")
+    print(f'Error al eliminar el usuario. Código de estado: {response.status_code}')
