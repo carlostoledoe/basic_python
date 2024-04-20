@@ -21,3 +21,14 @@
 #     print(f'Debe ingresar solo números')
 # else:
 #     print(f'Correcto, ha eledigo el número {eleccion}')
+
+
+
+
+
+# # Si es numero
+# num = input('Ingrese un número ')
+# if not num.isnumeric():
+#     print('Ingrese solo numeros')
+# else:
+#     print('Su numero es ', num)
