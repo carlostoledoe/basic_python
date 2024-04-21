@@ -29,7 +29,17 @@ def request_get(url):
 def validate(lista, eleccion):
     while eleccion not in lista:
         eleccion = input('Opción no válida, ingrese una de las opciones válidas: ')
-    return eleccion
+    return eleccion # Retorna la elección
+
+def esta_presente(elemento, lista): 
+    return elemento in lista #Retorna true or false
 
 
 
+
+
+
+
+#Valida numero mayor a cero y da True o False
+def validar_numero(numero: int):
+    return numero > 0
