@@ -26,12 +26,12 @@ def request_get(url):
 
 
 # Validar opciones (elección en una lista)
-def validate(lista, eleccion):
+def validate(lista: str, eleccion: list):
     while eleccion not in lista:
         eleccion = input('Opción no válida, ingrese una de las opciones válidas: ')
     return eleccion # Retorna la elección
 
-def esta_presente(elemento, lista): 
+def esta_presente(elemento: str, lista: list): 
     return elemento in lista #Retorna true or false
 
 
@@ -43,3 +43,40 @@ def esta_presente(elemento, lista):
 #Valida numero mayor a cero y da True o False
 def validar_numero(numero: int):
     return numero > 0
+
+
+
+
+
+
+
+
+#Valida que el texto solo tenga letras, retorna True o false
+def validar_texto(texto: str):
+    return texto.isalpha()
+
+def validar_texto(texto: str):
+        if not texto.isalpha():
+            raise ValueError("El nombre debe contener solo letras")
+        return texto
+
+
+
+
+
+
+
+
+
+
+
+# Escribir dentro de la instancia de una lista
+class Persona:
+    pass
+m = Persona()
+
+ingresados = []
+
+if m in ingresados: # Si la instancia m está en ingresado
+    indice = ingresados.index(m) # obtiene el indice (ubicación)
+    ingresados[indice] += m #suma (lo definido en += ) a la instancia del indice
