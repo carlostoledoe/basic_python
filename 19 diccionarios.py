@@ -7,7 +7,7 @@
 #         'jueves': 4,
 #         'viernes': 2
 #     }
-#     print(semana['miercoles']) 
+#     print(semana['miercoles'])
 
 #     for llave, valor in semana.items(): #items lo tranforman en interable, ya que el diccionario no es iterable
 #         if valor == 2:
@@ -172,7 +172,7 @@
 
 
 # #Convertir un diccinario en una lista (array):
-# nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items()) 
+# nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items())
 # print(nueva)
 
 
@@ -245,7 +245,7 @@
 # diccionario_b = {
 #     'e': 'feo',
 #     'f': 'malo',
-#     'g': 'bueno' 
+#     'g': 'bueno'
 # }
 # diccionario.update(diccionario_b) #Uniendo diccionarios
 # print(diccionario)
@@ -261,7 +261,7 @@
 #     'c': "hello",
 #     'e': 'feo',
 #     'f': 'malo',
-#     'g': 'bueno' 
+#     'g': 'bueno'
 # }
 # print(diccionario.keys()) #Muestra una LISTA con solo las llaves
 # print(diccionario.values()) #Muestra una LISTA con solo las llaves
@@ -280,7 +280,7 @@
 #     'c': "hello",
 #     'e': 'feo',
 #     'f': 'malo',
-#     'g': 'bueno' 
+#     'g': 'bueno'
 # }
 # consulta = input('Ingrese un dato: ')
 # print(diccionario.get(f'{consulta}', 'No se encuentra')) #Muestra el valor, sino, No se encuentra
@@ -297,10 +297,10 @@
 #     'c': "hello",
 #     'e': 'feo',
 #     'f': 'malo',
-#     'g': 'bueno' 
+#     'g': 'bueno'
 # }
 # new_dicc = list(diccionario.items()) # Cada par (clave, valor) será una tupla:
-# print(new_dicc) 
+# print(new_dicc)
 
 
 
@@ -324,7 +324,7 @@
 #     'c': 'hello',
 #     'd': 'feo',
 #     'e': 'malo',
-#     'f': 'bueno' 
+#     'f': 'bueno'
 # }
 # print('''
 #     Elija una opción:
@@ -355,3 +355,40 @@
 # eleccion = input('Elija una opción (bas, inter, avan): ')
 # num = random.choice(opciones[eleccion])
 # print(num)
+
+
+
+
+
+
+
+
+
+
+
+# # Sacar los datos de una lista que están en diccionario
+# import json
+
+# usuarios = [
+# {"nombre": "Page", "apellido": "Stappard", "email": "pstappard0@java.com", "genero": "Bigender"},
+# {"nombre": "Alli", "apellido": "Truckell", "email": "atruckell1@lulu.com", "genero": "Agender"},
+# {"nombre": "Nissy", "apellido": "Dell Casa", "email": "ndellcasa2@godaddy.com", "genero": "Female"}
+# ]
+
+# for usuario in usuarios:
+#     # for k, v in usuario.items():
+#     #     if k == 'nombre':
+#     #         nombre = v
+#     #     if k == 'apellido':
+#     #         apellido = v
+#     #     if k == 'email':
+#     #         email = v
+#     #     if k == 'genero':
+#     #         genero = v
+    
+#     nombre = usuario.get('nombre')
+#     apellido = usuario.get('apellido')
+#     email = usuario.get('email')
+#     genero = usuario.get('genero')
+    
+#     print(f'name: {nombre} || lastname: {apellido} || email: {email} || genre: {genero} ')
