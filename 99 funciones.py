@@ -80,3 +80,16 @@ ingresados = []
 if m in ingresados: # Si la instancia m está en ingresado
     indice = ingresados.index(m) # obtiene el indice (ubicación)
     ingresados[indice] += m #suma (lo definido en += ) a la instancia del indice
+
+
+
+
+
+
+
+
+
+#S i el valor entregado es menor a 0.75, se retorna 0.75; si el valor entregado es
+# mayor a 0.85, se retorna 0.85. En cualquier otro caso, se retorna el valor entregado.
+def validar_max_min(numero) -> float:
+    return min(max(0.75, numero), 0.85) 
