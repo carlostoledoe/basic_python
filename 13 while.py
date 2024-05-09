@@ -1,23 +1,3 @@
-# import getpass
-
-# def validarPassword(password): #Acoplar funciones para hacer más fácil revisar, arreglar
-#     #Validamos que sea de largo al menos sea 6
-#     if len(password) < 6:
-#         print('Su contraseña debe contener al menos 6 caracteres')
-#         return False
-#     elif password == '12345678':
-#         print('Este password es muy sencillo. Elija otro')
-#         return False
-#     elif password == '87654321':
-#         print('Este password es muy sencillo. Elija otro')
-#         return False
-#     elif ("'" in password) or ("*" in password) or ("-" in password):
-#         print("No puede usar especial dentro de su password")
-#         return False
-#     else:
-#         print('Contraseña correcta')
-#         return True
-
 # def main():
 # # esCorrecta = False
 # # while esCorrecta != True:
@@ -49,14 +29,18 @@
 
 
 
+
+
+
+
 # import sys #Permite ingresar datos desde la consonla
 # def sigma():
-#     numero = int(sys.argv[1]) #Indica qué atributo tomará
+#     numero = int(sys.argv[1]) #Indica qué atributo tomará, el primero junto al nombre 
 #     i = 1 #inicar iterador
 #     suma = 0
-#     while i <= numero: #condición
+#     while i <= numero: # condición 
 #         suma += i
-#         i += 1 #Incremento
+#         i += 1 # Incremento 
 #     print(suma) 
 # sigma()
 
@@ -66,3 +50,30 @@
 
 
 
+
+# # Elección con not in y while
+# opciones = [1,2,3,4,5,6,7,8,9,0]
+# eleccion = int(input('Ingrese una opción: '))
+
+# while eleccion not in opciones:
+#     eleccion = int(input('Opción no válida, ingrese una de las opciones válidas: '))
+# print(f'El numero {eleccion} está en la lista')
+
+
+
+
+
+
+
+
+
+# # Buscando una palabra en una lista usando in e enumerate (otra forma)
+# palabra = None
+# while palabra != 'x':
+#     palabra = input('Ingrese palabra a buscar o ingrese x para salir: ')
+#     cuentos = ['En', 'un', 'lugar', 'de', 'la', 'Mancha,', 'de', 'cuyo', 'nombre', 'no', 'quiero', 'acordarme,', 'no', 'ha', 'mucho', 'tiempo', 'que', 'vivía', 'un', 'hidalgo', 'de', 'los', 'de', 'lanza', 'en', 'astillero,', 'adarga', 'antigua,', 'rocín', 'flaco', 'y', 'galgo', 'corredor.']
+#     try:
+#         indice = cuentos.index(palabra)
+#         print(f'La palabra "{palabra}" está en la posición {indice}')
+#     except ValueError:
+#         print('La palabra no se encontró')

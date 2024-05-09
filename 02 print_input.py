@@ -35,13 +35,3 @@
 
 # #4. Respuesta total
 # print('Hola ' + nombre + ', tu edad es ' + age)
-
-
-
-
-
-
-
-
-
-

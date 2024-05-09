@@ -154,10 +154,3 @@
 
 # resultado = get_multiple(diccionario_prueba, 'two', 'six', 'one')
 # print(resultado)
-
-
-
-
-
-
-

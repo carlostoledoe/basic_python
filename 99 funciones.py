@@ -93,3 +93,48 @@ if m in ingresados: # Si la instancia m está en ingresado
 # mayor a 0.85, se retorna 0.85. En cualquier otro caso, se retorna el valor entregado.
 def validar_max_min(numero) -> float:
     return min(max(0.75, numero), 0.85) 
+
+
+
+
+
+
+# Si es numero o no
+dato = input('Ingrese un número: ')
+def es_numero(numero):
+    return False if not dato.isnumeric() else True
+print(es_numero(dato))
+
+
+
+
+
+
+
+
+#Numeros pares:
+dato = int(input('Ingrese un número: '))
+def es_par(numero):
+    return True if numero % 2 == 0 else False
+print(es_par(dato))
+
+
+
+
+
+
+
+
+
+# Penultimo de una lista
+def penultimo(lista):
+    largo = len(lista)
+    return print(lista[largo - 2])
+
+
+
+
+
+
+
+

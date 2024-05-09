@@ -13,7 +13,7 @@ BONUS: Una vez finalizado, imprimir el total del dinero en especies
 
 # mascotas = []
 # while True:
-#     especie = input('Ingrese nombre de la especie: ')
+#     especie = input('\nIngrese nombre de la especie (0 para salir): ')
 #     if especie == '0':
 #         break
 #     precio = int(input('Ingrese precio de la unidad: '))
@@ -40,8 +40,7 @@ BONUS: Una vez finalizado, imprimir el total del dinero en especies
 
 
 
-# import json
-# print('Bienvenido al ADMIN de la tienda de mascotas')
+# print('\nBienvenido al ADMIN de la tienda de mascotas')
 # def tiendas():
 #     mascotas = []
 #     while True:
@@ -66,5 +65,4 @@ BONUS: Una vez finalizado, imprimir el total del dinero en especies
 #     #Imprimir los totales
 #     print(f'En la tienda hay ${total} en especies')
 #     print(mascotas)
-#     print(json.dumps(mascotas, indent=4))
 # tiendas()

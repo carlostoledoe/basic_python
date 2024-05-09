@@ -1,225 +1,27 @@
-# def mostrar_semana():
-#     #semana es una variable del tipo diccionario
-#     semana = {
-#         'lunes': 2,
-#         'martes': 2,
-#         'miercoles': 4,
-#         'jueves': 4,
-#         'viernes': 2
-#     }
-#     print(semana['miercoles'])
-
-#     for llave, valor in semana.items(): #items lo tranforman en interable, ya que el diccionario no es iterable
-#         if valor == 2:
-#             print(f'el dia {llave} fue un dia CORTO')
-#         else:
-#             print(f'el dia {llave} fue un dia LARGO')
-# mostrar_semana()
-
-
-
-
-
-
-# def mostrar_personajes():
-#     nombre = input('Ingrse el nombre de un personaje: ')
-#     planeta = input('Ingrese el planeta de un personaje: ')
-#     poder = input('Ingrse el la habilidad del personaje: ')
-#     moral = input('Ingresar si es bueno o malo: ')
-
-#     personaje = {
-#         'nombre': nombre,
-#         'planeta': planeta,
-#         'poder': poder,
-#         'es_bueno': True if moral == 'bueno' else False
-#     }
-#     for llave, valor in personaje.items(): #llave es el primero y valor es lo segundo
-#         print(f'El valor de {llave} es {valor}')
-# mostrar_personajes()
-
-
-
-
-
-
-# destinos = [
-#     {
-#         'nombre': 'Argentina',
-#         'prefijo': 54,
-#         'cuidades': ['BS AS', 'Cordova', 'Mendoza', 'Jumin']
-#     },
-#     {
-#         'nombre': 'Suecia',
-#         'prefijo': 47,
-#         'ciudades': ['Estocolmo', 'Gotermburno', 'Malmo', 'Kiruna']
-#     }
-# ]
-# print(destinos[1]['ciudades'][2])
-
-
-
-
-
-
-
-# #llave vs valor (para la llave mejor usar string)
-# perro = {
-#     'raza': 'cocker',
-#     'nombre': 'Joe',
-#     'edad': 8
+# # #Métodos
+# diccionario = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello",
+#     'e': 'feo',
+#     'f': 'malo',
+#     'g': 'bueno'
 # }
-# for llave, valor in perro.items():
-#     print(f'La llave {llave} tiene el valor {valor}') #iterar el diccionario
+# print(diccionario.keys())                #Muestra una LISTA con solo las llaves
+# print(diccionario.values())              #Muestra una LISTA con solo las llaves
+# print(diccionario.items())               #Muestra una LISTA con pares clave-valor
+# # diccionario = list(diccionario.items()) #Transforma en lista de tuplas
+# print(diccionario)
+# print(diccionario['c'])                   # Ver el valor de la llave c (hello)
+# diccionario['g'] = 'Bondadoso'            # Cambio el valor de la llave g (sobrescribe)
+# diccionario['h'] = 'Terrible'             # agregar una nueva llave y valor . La llave debe ser única
+# del diccionario['h']                      # Elimina la clave
+# print(diccionario)
 
-# print(perro['raza']) #Ver el valor de la llave raza (coker)
-# perro['nombre'] = 'Rocky' #Cambio de nombre, se sobrescribe
-# perro['dueño'] = 'José' #agregar una nueva llave y valor . La llave debe ser única
-# print(perro)
 
-# del perro['dueño'] #Elimina la clave
-# print(perro)
 
-# datos_perro = {'talla': 'mediano', 'vacunas': ['octuple', 'antirrabica']} #diccionario adicional
 
-# perro.update(datos_perro) #Es como concatenar. Puede pidar los datos
-# print(perro)
-
-
-
-
-
-
-
-
-
-# auto = {
-#     'marca': 'mazda',
-#     'modelo': '3',
-#     'motor': 2000
-# }
-
-# auto.update({
-#     'color': 'rojo',
-#     '4x4': False
-# })
-
-# print(auto)
-
-
-
-
-
-
-# #Un diccionario
-# perro = {
-#     'raza': 'cocker',
-#     'nombre': 'Joe',
-#     'edad': 8
-# }
-
-# #Agregando llaves
-# perro['tiene dueno'] = True
-# perro['vacuna'] = ['Atirrabica', 'Octuple']
-
-# print(perro)
-
-# #Iterando por llave
-# for llave in perro.keys():
-#     print(llave)
-
-# #Iterando por values
-# for valor in perro.values():
-#     print(valor)
-
-# #Iterando por ambos (lista de pares)
-# for k, v in perro.items():
-#     print(f'El valor de la llave {k} es:')
-#     print(v)
-
-
-
-
-
-
-#generador range(0, 100, 1)
-#Solo se materializan cuando se acceden a ellas
-
-
-
-
-# print(perro['raza'])
-# print(perro.get('tamaño', 'no definido')) #para errores.
-
-# print(perro)
-
-
-
-
-
-
-
-
-
-
-
-
-# lista = [3, 4, 5.3, 10, 21, 3.1]
-# print(min(lista))
-# print(sum(lista))
-# print(sum(lista) /len(lista))
-
-
-
-
-# #Convertir un diccinario en una lista (array):
-# nueva = list({'raza': 'cocker', 'nombre': 'Joe', 'edad': 8}.items())
-# print(nueva)
-
-
-
-
-
-
-
-# #Iterando
-# letras = {
-#     '1': 'One',
-#     '2': 'Two',
-#     '3': 'Three',
-#     '4': 'Four',
-#     '5': 'Five'
-# }
-# for k, v in letras.items():
-#     print(f'{k} es en ingles {v}')
-
-
-
-
-
-
-
-# claves = ['nombre','apellido','edad','altura']
-# valores = ['Juan','Pérez', 33, 1.75]
-# print({k:v for k,v in zip(claves, valores)})
-
-
-
-
-
-
-# alternativas = ['nombre','apellido','edad','altura']
-# letras = ['A','B','C','D']
-# for l, a in zip(letras, alternativas):
-#     print(f'{l}. {a}')
-
-
-
-
-
-# #Acceder al la lista y al diccionario
-# lista = [25, 31, "hola"]
-# print(lista[2]) # Se accede por la posición
-
+# # Acceder al diccionario directo
 # diccionario = {
 #     "a": 25,
 #     "b": 31,
@@ -232,42 +34,21 @@
 
 
 
-# #Agregando y modificando elementos
+
+
+
+
+# # Get para informar datos que no están
 # diccionario = {
-#     'a': 25,
-#     'b': 31,
-#     'c': "hello",
+#     'a': 'bueno',
+#     'b': 'malo',
+#     'c': 'feo',
 # }
-# diccionario['d'] = 'Chao' #Se agrega d
-# diccionario['c'] = 'Hola' #Modifica c
-# del diccionario['a']  #Elimino la clave a sin mostrarlo
-# print(diccionario.pop('b')) #Muestro el valor eliminado
-# diccionario_b = {
-#     'e': 'feo',
-#     'f': 'malo',
-#     'g': 'bueno'
-# }
-# diccionario.update(diccionario_b) #Uniendo diccionarios
-# print(diccionario)
+# # print(diccionario['d']) # Genera error, para evitarlo:
+# print(diccionario.get('a', 'no definido')) # como existe, imprime bueno
+# print(diccionario.get('d', 'no definido')) # como NO existe, imprime no definido
 
 
-
-
-
-# #Métodos
-# diccionario = {
-#     'a': 25,
-#     'b': 31,
-#     'c': "hello",
-#     'e': 'feo',
-#     'f': 'malo',
-#     'g': 'bueno'
-# }
-# print(diccionario.keys()) #Muestra una LISTA con solo las llaves
-# print(diccionario.values()) #Muestra una LISTA con solo las llaves
-# print(diccionario.items()) #Muestra una LISTA con pares clave-valor
-# lista_diccionario = list(diccionario.items()) #Transforma en lista
-# print(lista_diccionario)
 
 
 
@@ -290,53 +71,265 @@
 
 
 
-# #Convertir un diccionario en una lista
+
+
+# #Agregando y modificando elementos
 # diccionario = {
 #     'a': 25,
 #     'b': 31,
-#     'c': "hello",
+#     'c': "hello"
+# }
+
+# diccionario['d'] = 'Chao' # Se agrega d
+# diccionario['c'] = 'Hola' # Modifica c
+# del diccionario['a']  # Elimino la clave a sin mostrarlo
+# print(diccionario.pop('b')) # Elimino y muestro el valor eliminado
+
+
+
+
+
+
+
+
+
+# #Uniendo diccionarios, concatenando
+# diccionario_a = {
+#     'a': 25,
+#     'b': 31,
+#     'c': "hello"
+# }
+# diccionario_b = {
 #     'e': 'feo',
 #     'f': 'malo',
 #     'g': 'bueno'
 # }
-# new_dicc = list(diccionario.items()) # Cada par (clave, valor) será una tupla:
-# print(new_dicc)
+# diccionario_a.update(diccionario_b)
+# print(diccionario_a)
 
 
 
 
 
 
-# #Convertir una lista en diccionario
-# lista = [('a', 25), ('b', 31), ('c', 'hello'), ('e', 'feo'), ('f', 'malo'), ('g', 'bueno')]
-# new_lista = dict(lista)
-# print(new_lista) # diccionario
 
 
 
-
-
-
-# #Caso de no elegir una clave en opciones
-# diccionario = {
-#     'a': 25,
-#     'b': 31,
-#     'c': 'hello',
-#     'd': 'feo',
-#     'e': 'malo',
-#     'f': 'bueno'
+# #Convertir un diccinario en una lista de los valores:
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
 # }
-# print('''
-#     Elija una opción:
-#     a: 25
-#     b: 31
-#     c: hello
-#     d: feo
-#     e: malo
-#     f: bueno''')
-# opcion = input('> ')
-# respuesta = diccionario.get(opcion, 'otra cosa que no está')
-# print(f'Su respuesta fue: {respuesta}')
+# nueva = list(perro.values())
+# print(nueva) # Salida: ['cocker', 'Joe', 8]
+
+
+
+
+
+
+
+# #Convertir un diccinario en una lista de tuplas:
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
+# }
+# nueva = list(perro.items())
+# print(nueva) # Salida: [('raza', 'cocker'), ('nombre', 'Joe'), ('edad', 8)]
+
+
+
+
+
+
+# # Convertir una lista de tuplas en diccionario:
+# lista = [('raza', 'cocker'), ('nombre', 'Joe'), ('edad', 8)]
+# diccionario = dict(lista)
+# print(diccionario)
+
+
+
+
+
+
+
+
+
+# # Convierte dos listas en un diccionario:
+# claves = ['nombre','apellido','edad','altura']
+# valores = ['Juan','Pérez', 33, 1.75]
+# print({k:v for k,v in zip(claves, valores)})
+
+
+
+
+
+
+
+
+
+
+
+# # Iterando:
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
+# }
+
+# #Iterando por llave
+# for llave in perro.keys():
+#     print(llave)
+
+# #Iterando por values
+# for valor in perro.values():
+#     print(valor)
+
+# #Iterando por ambos (lista de pares)
+# for k, v in perro.items():
+#     print(f'El valor de la llave {k} es: {v}')
+
+
+
+
+
+
+# # Iterando un diccionario
+# perro = {
+#     'raza': 'cocker',
+#     'nombre': 'Joe',
+#     'edad': 8
+# }
+
+# for llave, valor in perro.items():
+#     print(f'La llave: {llave} tiene el valor: {valor}') #iterar el diccionario
+
+
+
+
+
+
+
+
+# # Consultado diccionarios
+# semana = {
+#     'lunes': 2,
+#     'martes': 2,
+#     'miercoles': 4,
+#     'jueves': 4,
+#     'viernes': 2
+# }
+
+# def mostrar_semana(semana):
+#     for llave, valor in semana.items():
+#         if valor == 2:
+#             print(f'el dia {llave} fue un dia CORTO')
+#         else:
+#             print(f'el dia {llave} fue un dia LARGO')
+# mostrar_semana(semana)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Iterando una lista con diccionario:
+# stop = None
+# diccionario_personajes = []
+# n = 0
+
+# while stop != 'x':
+#     nombre = input('\nNombre: ')
+#     planeta = input('Planeta: ')
+#     poder = input('Habilidad: ')
+#     stop = input('Digitar x para detener: ')
+
+#     personaje = {
+#         'nombre': nombre,
+#         'planeta': planeta,
+#         'poder': poder
+#     }
+#     diccionario_personajes.append(personaje)
+
+# for personaje in diccionario_personajes:
+#     n += 1
+#     print(f'\nPersonaje {n}:')
+#     for llave, valor in personaje.items():
+#         print(f'Su {llave} es {valor}')
+
+
+
+
+
+
+
+
+# # Accediendo a datos dentro de una lista de diccionarios
+# destinos = [
+#     {
+#         'nombre': 'Argentina',
+#         'prefijo': 54,
+#         'ciudades': ['BS AS', 'Cordova', 'Mendoza', 'Jumin']
+#     },
+#     {
+#         'nombre': 'Suecia',
+#         'prefijo': 47,
+#         'ciudades': ['Estocolmo', 'Gotermburno', 'Malmo', 'Kiruna']
+#     }
+# ]
+# print(destinos[0]['ciudades'][1]) # Cordova
+# print(destinos[1]['ciudades'][2]) # Malmo
+
+
+
+
+
+
+
+
+# # Extrayenodo datos puntales de una lista de diccionarios
+# usuarios = [
+# {'nombre': 'Page',
+# 'apellido': 'Stappard',
+# 'email': 'pstappard0@java.com',
+# 'genero': 'Bigender'
+# },
+
+# {'nombre': 'Alli',
+# 'apellido': 'Truckell',
+# 'email': 'atruckell1@lulu.com',
+# 'genero': 'Agender'
+# },
+
+# {'nombre': 'Nissy',
+# 'apellido': 'Dell Casa',
+# 'email': 'ndellcasa2@godaddy.com',
+# 'genero': 'Female'
+# }]
+
+# for usuario in usuarios:
+#     nombre = usuario.get('nombre')
+#     apellido = usuario.get('apellido')
+#     email = usuario.get('email')
+#     genero = usuario.get('genero')
+
+#     print(f'name: {nombre}, lastname: {apellido}, email: {email}, genre: {genero} ')
+
+
 
 
 
@@ -362,33 +355,50 @@
 
 
 
-
-
-
-
-# # Sacar los datos de una lista que están en diccionario
+# # imprime en formato Json en terminal
 # import json
-
 # usuarios = [
-# {"nombre": "Page", "apellido": "Stappard", "email": "pstappard0@java.com", "genero": "Bigender"},
-# {"nombre": "Alli", "apellido": "Truckell", "email": "atruckell1@lulu.com", "genero": "Agender"},
-# {"nombre": "Nissy", "apellido": "Dell Casa", "email": "ndellcasa2@godaddy.com", "genero": "Female"}
-# ]
+# {'nombre': 'Page',
+# 'apellido': 'Stappard',
+# 'email': 'pstappard0@java.com',
+# 'genero': 'Bigender'
+# },
 
-# for usuario in usuarios:
-#     # for k, v in usuario.items():
-#     #     if k == 'nombre':
-#     #         nombre = v
-#     #     if k == 'apellido':
-#     #         apellido = v
-#     #     if k == 'email':
-#     #         email = v
-#     #     if k == 'genero':
-#     #         genero = v
-    
-#     nombre = usuario.get('nombre')
-#     apellido = usuario.get('apellido')
-#     email = usuario.get('email')
-#     genero = usuario.get('genero')
-    
-#     print(f'name: {nombre} || lastname: {apellido} || email: {email} || genre: {genero} ')
+# {'nombre': 'Alli',
+# 'apellido': 'Truckell',
+# 'email': 'atruckell1@lulu.com',
+# 'genero': 'Agender'
+# },
+
+# {'nombre': 'Nissy',
+# 'apellido': 'Dell Casa',
+# 'email': 'ndellcasa2@godaddy.com',
+# 'genero': 'Female'
+# }]
+
+# print(json.dumps(usuarios, indent=4))
+
+
+
+
+
+
+
+
+# # **kwargs (Argumentos de palabra clave):
+# # **kwargs permite pasar un número variable de argumentos de palabra clave a una función.
+# # Los argumentos se recopilan en un diccionario dentro de la función.
+# # Útil cuando queremos manejar argumentos con nombres específicos.
+
+# def mostrar_info(**kwargs):
+#     print(kwargs) # Es un diccionario
+#     for clave, valor in kwargs.items():
+#         print(f"{clave}: {valor}")
+
+
+# mostrar_info(nombre="Juan", edad=30, ciudad="Madrid")
+# # Salida:
+# # {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Madrid'}
+# # nombre: Juan
+# # edad: 30
+# # ciudad: Madrid
