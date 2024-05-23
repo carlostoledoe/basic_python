@@ -243,3 +243,55 @@ import pdb
 # r = json.loads(requests.get(url, headers = {"app_id": app_id, "app_key": app_key}).text)
 # print(r)
 # print(r.keys())
+
+
+
+
+
+
+
+
+
+
+import requests
+import json
+
+
+#Requerimiento simple
+def request_get(url): 
+    return json.loads(requests.get(url).text) 
+
+url = 'https://reqres.in/api/users'
+
+users_data = request_get(url)
+
+
+print('\n*** Consultor de base de datos ***\n')
+print('''¿Qué dato tiene para consultar?
+1) Por ID
+2) Por email''')
+opcion = int(input('> '))
+
+def consulta_id():
+    id = int(input('Ingrese el ID para consular datos: ')) 
+    for user in users_data['data']:
+        if user['id'] == id:
+            menu(user)  
+
+def consulta_email():
+    email = input('Ingrese el email para consular datos: ')
+    for user in users_data['data']:
+        if user['email'] == email:
+            menu(user)
+
+def menu(user):
+    id = user['id']
+    email = user['email']
+    nombre = user['first_name']
+    apellido = user['last_name']
+    print(f'El nombre es: {nombre}\nEl apellido es: {apellido}\nEl email es: {email}\nEl ID es: {id} ')
+
+if opcion == 1:
+    consulta_id()
+elif opcion == 2:
+    consulta_email()
