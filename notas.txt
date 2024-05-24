@@ -1,15 +1,13 @@
-Crear un ambiente virtual:
+Ambiente virtual:
 
-Crear:              python -m venv buscador
-Activar:		    source buscador/bin/activate                          #Si está en la misma carpeta
-Activar:            source virtual_env/chatbot/bin/activate               #Si está una carpeta adentro
-Activar:		    source ../entornos_virtuales/buscador/bin/activate    #Está una carpeta atrás
-Consultar libr:	    pip freeze
-borrar ambiente:  	rm -rf buscador/
-Salir de amb:		   	deactivate
+Crear:                                  python -m venv nombre
+Activar:		                        source nombre/bin/activate
+Consultar librerías del ambiente:	    pip freeze
+borrar ambiente:                    	rm -rf buscador/
+Salir de amb:		                	deactivate
 
-Crea los requeremientos:        pip freeze > requierment.txt
-Instalar los requeremientos:    pip install -r requierment.txt
+Crea los requeremientos:        pip freeze > requierments.txt
+Instalar los requeremientos:    pip install -r requierments.txt
 
 Instalar la ultima dependencia:     pip install django
 Instalar una dependencia puntal:    pip install django==3.2.4
