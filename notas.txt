@@ -7,7 +7,13 @@ Activar:		    source ../entornos_virtuales/buscador/bin/activate    #Está una c
 Consultar libr:	    pip freeze
 borrar ambiente:  	rm -rf buscador/
 Salir de amb:		   	deactivate
-Crea los requeremientos:    pip freeze > requierment.txt
+
+Crea los requeremientos:        pip freeze > requierment.txt
+Instalar los requeremientos:    pip install -r requierment.txt
+
+Instalar la ultima dependencia:     pip install django
+Instalar una dependencia puntal:    pip install django==3.2.4
+Instalar versión menor a 3:         pip install "django<3"
 
 
 
