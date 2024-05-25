@@ -35,6 +35,23 @@
 
 
 
+# # Acceder al diccionario usando in
+# def poliglota(nombre, idioma):
+#     idiomas = {
+#         'ingles': 'Hello, how are you!', 
+#         'sueco': 'Hejsan, hur är det!',
+#         'aleman': 'Hallo, wie geht es du!'
+#     }
+    
+#     if idioma in idiomas.keys():
+#         print(f'{idiomas[idioma]}, {nombre.capitalize()}')
+#     else:
+#         print('No entiendo el idioma')
+# poliglota('carlos', 'sueco')
+
+
+
+
 
 
 
