@@ -32,3 +32,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Carga las variables de entorno del archivo .env
 
 api_key = os.getenv('API_KEY') # Asignando a la variables 
+
+
+Revisar código:
+import pdb; pdb.set_trace()
