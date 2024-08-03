@@ -33,11 +33,32 @@ def num_palabra(num):
   
   elif num <= 999:
     centenas_palabras = ['', '', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seisientos', 'setecientos', 'ochocientos', 'novecientos']
-    centenas = math.floor( num / 100)
+    centenas = math.floor( num / 100) #Función piso. Elimina los decimales
     resto = num - (centenas * 100)
     if resto == 0:
       return centenas_palabras[centenas]
     return centenas_palabras[centenas] + ' ' + num_palabra(resto)
+  
+  elif num == 1000:
+    return 'luca'
+  elif num <= 1999:
+    resto = num - 1000
+    return 'mil ' + num_palabra(resto)
+  elif num <= 999999:
+    miles = math.floor(num / 1000)
+    resto = num - (miles * 1000)
+    if resto == 0:
+      return num_palabra(miles) + ' mil'
+    return num_palabra(miles) + ' mil ' + num_palabra(resto)
+  elif num == 1_000_000:
+    return 'un millón'
+  elif num <= 1_999_999:
+    resto = num - 1_000_000
+    return 'un millon ' + num_palabra(resto) 
+  elif num <= 1_000_000_000_000:
+    millones = math.floor(num / 1_000_000)
+    resto = num - (millones * 1_000_000)
+    return num_palabra(millones) + ' millones' +  num_palabra(resto)
   else:
     return 'no implementado'
 
